@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Ribhu Sengupta</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fa5a2a1f5a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ------------------header-------------------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick=closeMenu()></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Fullstack Developer</p>
+                <h1>Hi, I'm <span id="name">Ribhu Sengupta</span>.<br><span id="element"></span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------- about ---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img id="user" src="user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hi, I'm Ribhu Sengupta, a passionate and creative web developer with a deep love for crafting
+                            beautiful and functional websites. With 2 years of experience in the field, I've had the
+                            privilege of working on a diverse range of projects, from personal blogs to e-commerce
+                            platforms and everything in between.
+
+                            My journey in web development began with a curiosity for how websites work and a
+                            determination to bring digital ideas to life. Over the years, I've honed my skills in
+                            front-end and back-end development, ensuring that the websites I create not only look
+                            stunning but also perform flawlessly.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Design</span><br>HTML/CSS/JSS</li>
+                            <li><span>Frontend Development</span><br>Angular</li>
+                            <li><span>Backend Development</span><br>.NET</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022- Current</span><br>Fullstack Developer at Infosys Limited</li>
+                            <li><span>2018 - 2019</span><br>IoT Developer at Advanced Institude of Crystalline
+                                Technology</li>
+                            <li><span>2019</span><br>Intern as Embedded Engineer at Techmaniacs Eduservices</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor in Technology</span><br>Computer Science - 7.8 CGPA</li>
+                            <li><span>Engineering College</span><br>Bengal College Of Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------Services------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Enthusiastic web developer with a passion for creating engaging and user-friendly websites.
+                       Proficient in front-end technologies including HTML, CSS, and JavaScript.
+                       Familiarity with responsive design principles and basic knowledge of back-end development. 
+                       A quick learner with a strong desire to expand skills and contribute to dynamic projects.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Application Development</h2>
+                    <p>Passionate application developer with a keen interest in creating functional and user-friendly software solutions. 
+                       Proficient in both front-end and back-end development, with experience in building web and mobile applications. 
+                       Strong problem-solving skills and a proactive approach to learning new technologies. 
+                       Excited to contribute to innovative projects and further expand expertise in application development.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ------------------------Portfolio------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-2.jpg">
+                    <div class="layer">
+                        <h3>Portfolio Responsive Web Design</h3>
+                        <p>A portfolio web development brief is a document that outlines the requirements and expectations
+                            for creating a website to showcase an individual's or a company's work, projects, or services.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-1.jpg">
+                    <div class="layer">
+                        <h3>E-Commerce Website Development</h3>
+                        <p>
+                            Creating a brief and concise e-commerce website development plan is essential for a
+                            successful online store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>E-Music Website Development</h3>
+                        <p>
+                            Creating a Spotify clone is a substantial project involving music streaming, user accounts,
+                            playlists, and more.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ----------Contact----------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> ribhu14.engineer@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9748220798</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ribhuswatgov/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/inferno_smiths/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ribhu-sengupta-67402915b/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="RIBHU's Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" cols="30" placeholder="Your Message" required></textarea><br>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyrights">
+            <p>Copyrights &#169; 2023 Ribhu Sengupta, Inc. All rights reserved</p> <!-- Channel-->
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
